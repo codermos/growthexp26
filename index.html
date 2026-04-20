@@ -60,11 +60,75 @@
             font-size: 0.95em;
         }
 
+        .nav-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.8em;
+            cursor: pointer;
+        }
+
         .nav-links a:hover {
             color: #ff6b35;
         }
 
         @media (max-width: 768px) {
+            .nav-toggle {
+                display: block;
+            }
+
+            .nav-links {
+                position: absolute;
+                top: 70px;
+                right: 20px;
+                background: rgba(26, 26, 26, 0.96);
+                flex-direction: column;
+                align-items: flex-start;
+                width: calc(100% - 40px);
+                padding: 20px;
+                gap: 20px;
+                border-radius: 12px;
+                display: none;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links li {
+                width: 100%;
+            }
+
+            .nav-links a {
+                width: 100%;
+            }
+
+            .hero {
+                padding: 80px 20px;
+            }
+
+            .hero h1 {
+                font-size: 2.5em;
+            }
+
+            section h2 {
+                font-size: 2em;
+            }
+
+            .schedule-item {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+
+            .pricing-card.featured {
+                transform: scale(1);
+            }
+
+            .nav-links {
+                flex-wrap: wrap;
+            }
+        }
             .nav-links {
                 gap: 15px;
                 font-size: 0.85em;
@@ -79,24 +143,103 @@
             text-align: center;
         }
 
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero-copy {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            align-items: center;
+        }
+
         .hero h1 {
             font-size: 3.5em;
-            margin-bottom: 20px;
+            margin-bottom: 0;
             font-weight: 700;
             letter-spacing: -1px;
+            line-height: 1.02;
+        }
+
+        .eyebrow {
+            color: #ffb28b;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            font-size: 0.95em;
         }
 
         .hero .subtitle {
             font-size: 1.4em;
-            margin-bottom: 15px;
-            color: #aaa;
+            margin-bottom: 0;
+            color: #ddd;
             font-weight: 300;
+            max-width: 760px;
+        }
+
+        .hero-text {
+            color: #d4d4d4;
+            font-size: 1.05em;
+            line-height: 1.8;
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        .hero-highlights {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .hero-highlights div {
+            background: rgba(255, 107, 53, 0.1);
+            border: 1px solid rgba(255, 107, 53, 0.2);
+            padding: 18px 24px;
+            border-radius: 999px;
+            text-align: center;
+            min-width: 140px;
+        }
+
+        .hero-highlights strong {
+            display: block;
+            font-size: 1.3em;
+            margin-bottom: 6px;
+            color: #ffffff;
+        }
+
+        .hero-highlights span {
+            display: block;
+            color: #d4d4d4;
+            font-size: 0.95em;
+        }
+
+        .hero-actions {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .cta-button.secondary {
+            background: transparent;
+            border-color: rgba(255,255,255,0.7);
+            color: white;
+        }
+
+        .cta-button.secondary:hover {
+            background: rgba(255,255,255,0.12);
+            color: white;
         }
 
         .hero .meta {
-            font-size: 1.1em;
-            color: #ff6b35;
-            margin: 10px 0;
+            font-size: 1.05em;
+            color: #ffb28b;
+            margin: 15px 0 0;
         }
 
         .cta-button {
@@ -229,6 +372,14 @@
             justify-content: center;
             color: white;
             font-size: 3em;
+            overflow: hidden;
+        }
+
+        .speaker-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
         }
 
         .speaker-info {
@@ -714,6 +865,7 @@
     <nav>
         <div class="container">
             <a href="#home" class="nav-brand">TGE'26</a>
+            <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#schedule">Schedule</a></li>
@@ -730,11 +882,25 @@
 
     <!-- Hero Section -->
     <section class="hero" id="home">
-        <div class="container">
-            <h1>The Growth Experience 2026</h1>
-            <p class="subtitle">Move from Hearing to Becoming</p>
-            <p class="meta">June 15-17, 2026 | Conference Center, Excellence City</p>
-            <a href="#pricing" class="cta-button">Register Now</a>
+        <div class="container hero-content">
+            <div class="hero-copy">
+                <p class="eyebrow">Scaling Digital Growth Through Systems and Leadership</p>
+                <h1>The Growth Experience 2026</h1>
+                <p class="subtitle">A 3-day conference for leaders ready to move from insight to action and create measurable momentum.</p>
+                <p class="hero-text">Join founders, creators, and growth teams for immersive sessions, powerful networking, and practical tools that turn ideas into results.</p>
+
+                <div class="hero-highlights">
+                    <div><strong>3 days</strong><span>Immersive learning</span></div>
+                    <div><strong>20+</strong><span>Power sessions</span></div>
+                    <div><strong>100+</strong><span>Growth leaders</span></div>
+                </div>
+
+                <div class="hero-actions">
+                    <a href="#pricing" class="cta-button">Register Now</a>
+                    <a href="#about" class="cta-button secondary">Learn More</a>
+                </div>
+                <p class="meta">June 15-17, 2026 | Conference Center, Excellence City</p>
+            </div>
         </div>
     </section>
 
@@ -1172,7 +1338,7 @@
                     <div class="blog-content">
                         <p class="blog-date">April 10, 2026</p>
                         <h3>Early Bird Tickets SOLD OUT - Standard Tier Now Available</h3>
-                        <p>Wow! Our early bird tier sold out in just 48 hours. Standard tickets are now available at $499. Grab yours before we hit capacity...</p>
+                        <p>Wow! Our early bird tier sold out in just 48 hours. Standard tickets are now available at ₦207,000. Grab yours before we hit capacity...</p>
                         <a href="#" class="read-more">Read More →</a>
                     </div>
                 </div>
@@ -1420,9 +1586,9 @@
                         <label for="ticket">Ticket Type</label>
                         <select id="ticket" name="ticket" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; font-size: 1em;">
                             <option>Select ticket type...</option>
-                            <option>Early Bird - $299</option>
-                            <option>Standard - $499</option>
-                            <option>VIP - $999</option>
+                            <option>Early Bird - ₦124,000</option>
+                            <option>Standard - ₦207,000</option>
+                            <option>VIP - ₦414,000</option>
                         </select>
                     </div>
 
@@ -1474,7 +1640,14 @@
     </footer>
 
     <script>
-        // Smooth scrolling for navigation links
+        // Smooth scrolling for navigation links and mobile menu state
+        const navLinks = document.querySelector('.nav-links');
+        const navToggle = document.querySelector('.nav-toggle');
+
+        navToggle?.addEventListener('click', () => {
+            navLinks?.classList.toggle('active');
+        });
+
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 const href = this.getAttribute('href');
@@ -1486,6 +1659,7 @@
                             behavior: 'smooth',
                             block: 'start'
                         });
+                        navLinks?.classList.remove('active');
                     }
                 }
             });
