@@ -1,0 +1,1507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Growth Experience 2026 - Conference</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Navigation */
+        nav {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+
+        .nav-brand {
+            color: #ff6b35;
+            font-size: 1.5em;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-size: 0.95em;
+        }
+
+        .nav-links a:hover {
+            color: #ff6b35;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                gap: 15px;
+                font-size: 0.85em;
+            }
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+
+        .hero .subtitle {
+            font-size: 1.4em;
+            margin-bottom: 15px;
+            color: #aaa;
+            font-weight: 300;
+        }
+
+        .hero .meta {
+            font-size: 1.1em;
+            color: #ff6b35;
+            margin: 10px 0;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #ff6b35;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 30px;
+            transition: all 0.3s ease;
+            font-size: 1.05em;
+            border: 2px solid #ff6b35;
+        }
+
+        .cta-button:hover {
+            background: transparent;
+            color: #ff6b35;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 60px 20px;
+        }
+
+        section h2 {
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            text-align: center;
+            color: #1a1a1a;
+        }
+
+        .content-box {
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .intro-text {
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-top: 4px solid #ff6b35;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .feature-card h3 {
+            color: #ff6b35;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        .feature-card p {
+            color: #666;
+            line-height: 1.7;
+        }
+
+        /* Schedule Section */
+        .schedule-item {
+            background: white;
+            border-left: 4px solid #ff6b35;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 6px;
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            gap: 20px;
+        }
+
+        .schedule-time {
+            color: #ff6b35;
+            font-weight: 600;
+            font-size: 1.1em;
+        }
+
+        .schedule-content h4 {
+            color: #1a1a1a;
+            margin-bottom: 8px;
+        }
+
+        .schedule-content p {
+            color: #666;
+            font-size: 0.95em;
+        }
+
+        /* Speakers Section */
+        .speaker-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .speaker-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .speaker-photo {
+            background: linear-gradient(135deg, #ff6b35, #ff8c42);
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3em;
+        }
+
+        .speaker-info {
+            padding: 25px;
+        }
+
+        .speaker-info h3 {
+            color: #1a1a1a;
+            margin-bottom: 8px;
+        }
+
+        .speaker-role {
+            color: #ff6b35;
+            font-weight: 600;
+            margin-bottom: 15px;
+            font-size: 0.9em;
+        }
+
+        .speaker-bio {
+            color: #666;
+            font-size: 0.9em;
+            line-height: 1.6;
+        }
+
+        /* Pricing Section */
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .pricing-card {
+            background: white;
+            border-radius: 10px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .pricing-card.featured {
+            border-color: #ff6b35;
+            transform: scale(1.05);
+            background: linear-gradient(135deg, rgba(255,107,53,0.05), rgba(255,140,66,0.05));
+        }
+
+        .pricing-card h3 {
+            color: #1a1a1a;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .price {
+            font-size: 2.5em;
+            color: #ff6b35;
+            margin: 20px 0;
+            font-weight: 700;
+        }
+
+        .price-note {
+            color: #999;
+            font-size: 0.9em;
+            margin-bottom: 25px;
+        }
+
+        .pricing-features {
+            list-style: none;
+            margin: 30px 0;
+            text-align: left;
+        }
+
+        .pricing-features li {
+            padding: 12px 0;
+            color: #666;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .pricing-features li:before {
+            content: "✓ ";
+            color: #ff6b35;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        /* Contact Form */
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #1a1a1a;
+            font-weight: 600;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-family: inherit;
+            font-size: 1em;
+            transition: border-color 0.3s ease;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #ff6b35;
+            box-shadow: 0 0 0 3px rgba(255,107,53,0.1);
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        /* Footer */
+        footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 10px 0;
+            color: #aaa;
+        }
+
+        .footer-links {
+            margin-top: 20px;
+        }
+
+        .footer-links a {
+            color: #ff6b35;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Highlight Box */
+        .highlight {
+            background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 10px;
+            margin: 40px 0;
+            text-align: center;
+            font-size: 1.3em;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5em;
+            }
+
+            section h2 {
+                font-size: 2em;
+            }
+
+            .schedule-item {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+
+            .pricing-card.featured {
+                transform: scale(1);
+            }
+
+            .nav-links {
+                flex-wrap: wrap;
+            }
+        }
+
+        /* Testimonials Section */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-top: 4px solid #ff6b35;
+            position: relative;
+        }
+
+        .testimonial-text {
+            color: #555;
+            font-size: 0.95em;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 5px;
+        }
+
+        .testimonial-role {
+            color: #ff6b35;
+            font-size: 0.85em;
+        }
+
+        .stars {
+            color: #ff6b35;
+            margin-bottom: 15px;
+        }
+
+        /* FAQ Section */
+        .faq-container {
+            max-width: 800px;
+            margin: 40px auto;
+        }
+
+        .faq-item {
+            background: white;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .faq-question {
+            background: linear-gradient(135deg, #f5f5f5 0%, #efefef 100%);
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%);
+            color: white;
+        }
+
+        .faq-question h4 {
+            color: inherit;
+            font-size: 1em;
+            margin: 0;
+        }
+
+        .faq-toggle {
+            font-size: 1.5em;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-toggle {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            padding: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+        }
+
+        .faq-item.active .faq-answer {
+            padding: 20px;
+            max-height: 500px;
+        }
+
+        .faq-answer p {
+            color: #666;
+            line-height: 1.7;
+        }
+
+        /* Sessions Section */
+        .session-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+
+        .session-card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-left: 5px solid #ff6b35;
+        }
+
+        .session-type {
+            display: inline-block;
+            background: #ff6b35;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.75em;
+            font-weight: 600;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .session-card h3 {
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .session-card p {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        .learning-outcomes {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 15px;
+        }
+
+        .learning-outcomes h5 {
+            color: #ff6b35;
+            font-size: 0.85em;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .learning-outcomes ul {
+            list-style: none;
+            font-size: 0.85em;
+            color: #666;
+        }
+
+        .learning-outcomes li {
+            padding: 5px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .learning-outcomes li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #ff6b35;
+        }
+
+        /* Blog/Updates Section */
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .blog-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .blog-image {
+            background: linear-gradient(135deg, #ff6b35, #ff8c42);
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3em;
+        }
+
+        .blog-content {
+            padding: 25px;
+        }
+
+        .blog-date {
+            color: #ff6b35;
+            font-size: 0.85em;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .blog-card h3 {
+            color: #1a1a1a;
+            margin-bottom: 12px;
+            font-size: 1.2em;
+        }
+
+        .blog-card p {
+            color: #666;
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+
+        .read-more {
+            display: inline-block;
+            color: #ff6b35;
+            font-weight: 600;
+            margin-top: 15px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .read-more:hover {
+            color: #1a1a1a;
+        }
+
+        /* Sponsors Section */
+        .sponsors-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin: 40px 0;
+            align-items: center;
+            justify-items: center;
+        }
+
+        .sponsor-logo {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            width: 150px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2em;
+            color: #ff6b35;
+            font-weight: bold;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .sponsor-logo:hover {
+            transform: scale(1.05);
+        }
+
+        /* Media/Gallery Section */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .gallery-item {
+            background: linear-gradient(135deg, #ff6b35, #ff8c42);
+            aspect-ratio: 1;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3em;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <a href="#home" class="nav-brand">TGE'26</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#organizer">Organizer</a></li>
+                <li><a href="#speakers">Speakers</a></li>
+                <li><a href="#sessions">Sessions</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>The Growth Experience 2026</h1>
+            <p class="subtitle">Move from Hearing to Becoming</p>
+            <p class="meta">June 15-17, 2026 | Conference Center, Excellence City</p>
+            <a href="#pricing" class="cta-button">Register Now</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About The Experience</h2>
+            <div class="content-box">
+                <p class="intro-text">
+                    The Growth Experience is not just another conference. It is the continuation of something deeper — something that started with the Growth Talk.
+                </p>
+                <p class="intro-text">
+                    What began as conversations turned into realizations. What felt like simple sessions became moments of clarity for thousands.
+                </p>
+                <p class="intro-text">
+                    The Growth Talk opened people's eyes. But The Growth Experience is where the real work begins.
+                </p>
+            </div>
+
+            <h2 style="margin-top: 60px;">What You'll Experience</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>From Hearing to Understanding</h3>
+                    <p>Move beyond passive listening to deep comprehension of growth principles that matter.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>From Understanding to Action</h3>
+                    <p>Translate insights into concrete strategies and frameworks you can implement immediately.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>From Action to Transformation</h3>
+                    <p>Create lasting results that speak louder than intentions and transform your trajectory.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Expert Guidance</h3>
+                    <p>Learn from industry leaders, entrepreneurs, and transformation coaches.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Peer Network</h3>
+                    <p>Connect with growth-minded individuals ready to accelerate their progress together.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Practical Resources</h3>
+                    <p>Access frameworks, templates, and tools to implement and measure your growth.</p>
+                </div>
+            </div>
+
+            <div class="highlight">
+                Some people will attend and feel inspired. But a few will engage… and their lives won't remain the same.
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule">
+        <div class="container">
+            <h2>Conference Schedule</h2>
+
+            <div class="content-box">
+                <h3 style="color: #1a1a1a; margin-bottom: 20px;">Day 1 - Friday, June 15</h3>
+
+                <div class="schedule-item">
+                    <div class="schedule-time">8:30 AM - 9:00 AM</div>
+                    <div class="schedule-content">
+                        <h4>Registration & Breakfast</h4>
+                        <p>Meet fellow attendees and get oriented</p>
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="schedule-time">9:00 AM - 10:30 AM</div>
+                    <div class="schedule-content">
+                        <h4>Opening Keynote: The Foundation of Growth</h4>
+                        <p>Setting the vision for your transformation</p>
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="schedule-time">10:45 AM - 12:15 PM</div>
+                    <div class="schedule-content">
+                        <h4>Breakout Sessions (Choose Your Path)</h4>
+                        <p>Career Growth | Personal Development | Financial Freedom</p>
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="schedule-time">12:30 PM - 1:30 PM</div>
+                    <div class="schedule-content">
+                        <h4>Networking Lunch</h4>
+                        <p>Connect with speakers and fellow attendees</p>
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="schedule-time">1:30 PM - 3:00 PM</div>
+                    <div class="schedule-content">
+                        <h4>Workshop: From Insight to Implementation</h4>
+                        <p>Hands-on framework for turning knowledge into action</p>
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="schedule-time">3:15 PM - 5:00 PM</div>
+                    <div class="schedule-content">
+                        <h4>Panel Discussion: Real Stories, Real Growth</h4>
+                        <p>Hear from those who've transformed their lives</p>
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="schedule-time">6:00 PM</div>
+                    <div class="schedule-content">
+                        <h4>Evening Reception</h4>
+                        <p>Celebrate day one and build connections</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-box" style="margin-top: 30px;">
+                <h3 style="color: #1a1a1a; margin-bottom: 20px;">Day 2 - Saturday, June 16 & Day 3 - Sunday, June 17</h3>
+                <p class="intro-text">Specialized intensive workshops, advanced breakout sessions, 1-on-1 coaching sessions, and deep-dive masterclasses led by industry experts. Complete schedule available upon registration.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Organizer Section -->
+    <section style="background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%); padding: 60px 20px;" id="organizer">
+        <div class="container">
+            <h2>Meet the Organizer</h2>
+
+            <div class="content-box" style="max-width: 700px; margin: 40px auto;">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center;">
+                    <div style="text-align: center;">
+                        <div style="background: linear-gradient(135deg, #ff6b35, #ff8c42); width: 200px; height: 200px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto; font-size: 5em;">👤</div>
+                    </div>
+                    <div>
+                        <h3 style="color: #ff6b35; margin-bottom: 10px; font-size: 1.5em;">Olamide Moses Owosanni</h3>
+                        <p style="color: #333; font-weight: 600; margin-bottom: 15px; font-size: 1.1em;">Founder & Organizer</p>
+                        
+                        <p style="color: #666; line-height: 1.8; margin-bottom: 15px;">
+                            An innovative leader with diverse expertise in IT support, social media management, and event organization. Olamide brings over 5 years of experience orchestrating high-impact events and digital campaigns.
+                        </p>
+
+                        <p style="color: #666; line-height: 1.8; margin-bottom: 15px;">
+                            With a proven track record of successfully managing teams, growing digital presence by 30%+ engagement rates, and organizing conferences that transform attendees' lives—The Growth Experience represents his vision of creating spaces where real growth happens.
+                        </p>
+
+                        <div style="background: #f9f9f9; padding: 20px; border-radius: 8px; margin-top: 20px;">
+                            <h4 style="color: #ff6b35; margin-bottom: 15px; font-size: 0.95em; text-transform: uppercase;">Quick Facts</h4>
+                            <ul style="list-style: none; color: #666; font-size: 0.9em; line-height: 1.8;">
+                                <li><strong>Leadership:</strong> Social Media Team Lead, Event Manager, IT Support Specialist</li>
+                                <li><strong>Passion:</strong> Building communities and enabling growth</li>
+                                <li><strong>Based:</strong> Lagos, Nigeria</li>
+                                <li><strong>Certifications:</strong> Google IT Support, Leadership (John Maxwell), Social Media Management</li>
+                            </ul>
+                        </div>
+
+                        <div style="margin-top: 25px;">
+                            <p style="color: #666; font-size: 0.9em; margin-bottom: 15px;"><strong>Connect With Olamide:</strong></p>
+                            <div style="display: flex; gap: 15px;">
+                                <a href="mailto:sirmosesmanager@gmail.com" style="color: #ff6b35; text-decoration: none; font-weight: 600;">Email</a>
+                                <a href="tel:+2348072096174" style="color: #ff6b35; text-decoration: none; font-weight: 600;">Phone</a>
+                                <a href="https://www.linkedin.com/in/theolamidemoses/" target="_blank" style="color: #ff6b35; text-decoration: none; font-weight: 600;">LinkedIn</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 50px;">
+                <a href="#pricing" class="cta-button">Be Part of This Movement</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Speakers Section -->
+    <section id="speakers">
+        <div class="container">
+            <h2>Meet Our Speakers</h2>
+
+            <div class="speaker-grid">
+                <div class="speaker-card">
+                    <div class="speaker-photo">👤</div>
+                    <div class="speaker-info">
+                        <h3>Sarah Leadership</h3>
+                        <div class="speaker-role">CEO & Entrepreneur</div>
+                        <p class="speaker-bio">20+ years of building companies and mentoring next-generation leaders. Expert in scaling businesses and personal transformation.</p>
+                    </div>
+                </div>
+
+                <div class="speaker-card">
+                    <div class="speaker-photo">🎯</div>
+                    <div class="speaker-info">
+                        <h3>Michael Strategy</h3>
+                        <div class="speaker-role">Executive Coach</div>
+                        <p class="speaker-bio">Specializes in helping high-performers break through their ceiling and reach their potential.</p>
+                    </div>
+                </div>
+
+                <div class="speaker-card">
+                    <div class="speaker-photo">💡</div>
+                    <div class="speaker-info">
+                        <h3>Elena Innovation</h3>
+                        <div class="speaker-role">Author & Change Agent</div>
+                        <p class="speaker-bio">Expert on organizational transformation and personal empowerment. Bestselling author of "The Growth Mindset"</p>
+                    </div>
+                </div>
+
+                <div class="speaker-card">
+                    <div class="speaker-photo">🚀</div>
+                    <div class="speaker-info">
+                        <h3>David Growth</h3>
+                        <div class="speaker-role">Leadership Consultant</div>
+                        <p class="speaker-bio">Helps teams and individuals unlock their potential through proven frameworks and breakthrough sessions.</p>
+                    </div>
+                </div>
+
+                <div class="speaker-card">
+                    <div class="speaker-photo">⭐</div>
+                    <div class="speaker-info">
+                        <h3>Amanda Success</h3>
+                        <div class="speaker-role">Performance Strategist</div>
+                        <p class="speaker-bio">Worked with Fortune 500 companies and solopreneurs to accelerate growth and achieve extraordinary results.</p>
+                    </div>
+                </div>
+
+                <div class="speaker-card">
+                    <div class="speaker-photo">🌟</div>
+                    <div class="speaker-info">
+                        <h3>James Transformation</h3>
+                        <div class="speaker-role">Life Coach</div>
+                        <p class="speaker-bio">Passionate about helping individuals discover their purpose and create meaningful impact in their lives and careers.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 50px;">
+                <a href="#pricing" class="cta-button">Get Your Ticket</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sessions / Tracks Section -->
+    <section id="sessions">
+        <div class="container">
+            <h2>Explore Sessions & Tracks</h2>
+
+            <div class="session-grid">
+                <div class="session-card">
+                    <span class="session-type">Workshop</span>
+                    <h3>Career Acceleration Framework</h3>
+                    <p>Build a clear roadmap for your professional growth with proven strategies used by top performers.</p>
+                    <div class="learning-outcomes">
+                        <h5>You'll Learn</h5>
+                        <ul>
+                            <li>Identify your unique value proposition</li>
+                            <li>Create a 90-day action plan</li>
+                            <li>Build powerful networking strategies</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="session-card">
+                    <span class="session-type">Keynote</span>
+                    <h3>The Foundation of Growth</h3>
+                    <p>Understand the mindset shifts and foundational principles that separate average from extraordinary.</p>
+                    <div class="learning-outcomes">
+                        <h5>You'll Learn</h5>
+                        <ul>
+                            <li>Core growth principles</li>
+                            <li>Mental models of success</li>
+                            <li>Overcoming limiting beliefs</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="session-card">
+                    <span class="session-type">Panel</span>
+                    <h3>Real Stories, Real Growth</h3>
+                    <p>Hear directly from thought leaders about their transformation journeys and what actually worked.</p>
+                    <div class="learning-outcomes">
+                        <h5>You'll Learn</h5>
+                        <ul>
+                            <li>Real-world application examples</li>
+                            <li>Common pitfalls to avoid</li>
+                            <li>Resources and tools they use</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="session-card">
+                    <span class="session-type">Workshop</span>
+                    <h3>From Insight to Implementation</h3>
+                    <p>Hands-on framework for converting knowledge into actionable results. Leave with a personal action plan.</p>
+                    <div class="learning-outcomes">
+                        <h5>You'll Learn</h5>
+                        <ul>
+                            <li>Implementation frameworks</li>
+                            <li>Accountability structures</li>
+                            <li>Measure and track progress</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="session-card">
+                    <span class="session-type">Masterclass</span>
+                    <h3>Advanced Leadership Dynamics</h3>
+                    <p>Deep-dive into what separates good leaders from great ones in today's rapidly changing world.</p>
+                    <div class="learning-outcomes">
+                        <h5>You'll Learn</h5>
+                        <ul>
+                            <li>Emotional intelligence mastery</li>
+                            <li>Strategic decision-making</li>
+                            <li>Building high-performance teams</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="session-card">
+                    <span class="session-type">Workshop</span>
+                    <h3>Financial Freedom Roadmap</h3>
+                    <p>Create your personalized plan for building wealth and achieving financial independence.</p>
+                    <div class="learning-outcomes">
+                        <h5>You'll Learn</h5>
+                        <ul>
+                            <li>Investment strategies</li>
+                            <li>Creating passive income</li>
+                            <li>Wealth mindset principles</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 50px;">
+                <a href="#pricing" class="cta-button">Reserve Your Spot Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <div class="container">
+            <h2>What Attendees Are Saying</h2>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"The Growth Experience completely changed how I think about my career. I went from feeling stuck to having a clear 5-year plan. Best investment I've made."</p>
+                    <p class="testimonial-author">Alex Thompson</p>
+                    <p class="testimonial-role">Marketing Manager</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"The frameworks shared here are gold. I've already implemented 3 strategies in my business and seen immediate results. The networking alone was worth every penny."</p>
+                    <p class="testimonial-author">Jessica Chen</p>
+                    <p class="testimonial-role">Entrepreneur & Founder</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"I came skeptical. I left transformed. The depth of content combined with the intimate Q&A sessions made this unlike any other conference I've attended."</p>
+                    <p class="testimonial-author">Marcus Williams</p>
+                    <p class="testimonial-role">Executive Director</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"The connections I made here led to partnerships and opportunities I wouldn't have found otherwise. Plus the speakers genuinely cared about our growth."</p>
+                    <p class="testimonial-author">Sofia Rodriguez</p>
+                    <p class="testimonial-role">Consultant</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"Finally, a conference that walks its talk. The experience matched the promise. I'm already telling everyone I know to attend the next one."</p>
+                    <p class="testimonial-author">David Park</p>
+                    <p class="testimonial-role">Product Manager</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"I came for the speakers, but I stayed for the experience. The energy, the people, the content—everything felt purposeful and real. Rare for a conference."</p>
+                    <p class="testimonial-author">Rebecca Stone</p>
+                    <p class="testimonial-role">HR Director</p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 50px;">
+                <a href="#pricing" class="cta-button">Don't Miss Out - Register Today</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog/Updates Section -->
+    <section style="background: #f5f5f5; padding: 60px 20px;">
+        <div class="container">
+            <h2>Latest Updates & Insights</h2>
+
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <div class="blog-image">📰</div>
+                    <div class="blog-content">
+                        <p class="blog-date">April 15, 2026</p>
+                        <h3>Meet Our Keynote Speaker: Sarah Leadership</h3>
+                        <p>Get to know the powerful woman who will be opening the conference. Sarah shares her journey and what attendees can expect...</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-image">💡</div>
+                    <div class="blog-content">
+                        <p class="blog-date">April 12, 2026</p>
+                        <h3>5 Ways to Prepare for The Growth Experience</h3>
+                        <p>Already registered? Here's how to get the most out of your conference experience. We recommend doing these 5 things before you arrive...</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-image">🎉</div>
+                    <div class="blog-content">
+                        <p class="blog-date">April 10, 2026</p>
+                        <h3>Early Bird Tickets SOLD OUT - Standard Tier Now Available</h3>
+                        <p>Wow! Our early bird tier sold out in just 48 hours. Standard tickets are now available at $499. Grab yours before we hit capacity...</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 50px;">
+                <a href="#" class="cta-button">View All Updates</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsors Section -->
+    <section style="background: white; padding: 60px 20px; border-top: 2px solid #f0f0f0;">
+        <div class="container">
+            <h2>Our Partners & Sponsors</h2>
+
+            <div class="sponsors-grid">
+                <div class="sponsor-logo">Sponsor Co.</div>
+                <div class="sponsor-logo">Growth Inc.</div>
+                <div class="sponsor-logo">Tech Leaders</div>
+                <div class="sponsor-logo">Prime Media</div>
+                <div class="sponsor-logo">Elite Partners</div>
+                <div class="sponsor-logo">Success Fund</div>
+            </div>
+
+            <div class="content-box" style="margin-top: 50px; text-align: center;">
+                <h3 style="color: #1a1a1a; margin-bottom: 15px;">Interested in Sponsoring?</h3>
+                <p class="intro-text" style="margin-bottom: 20px;">
+                    Reach an audience of growth-minded professionals and entrepreneurs. Learn about our sponsorship opportunities and packages.
+                </p>
+                <a href="mailto:sponsors@tge26.com" class="cta-button">Sponsorship Information</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing">
+        <div class="container">
+            <h2>Ticket Pricing</h2>
+
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Early Bird</h3>
+                    <div class="price">₦124,000</div>
+                    <p class="price-note">Limited availability • First 100 registrants</p>
+                    <ul class="pricing-features">
+                        <li>All 3 days of conference</li>
+                        <li>All keynotes & workshops</li>
+                        <li>Lunch & refreshments</li>
+                        <li>Conference materials</li>
+                        <li>Networking events</li>
+                    </ul>
+                    <a href="#contact" class="cta-button">Register Now</a>
+                </div>
+
+                <div class="pricing-card featured">
+                    <h3>Standard</h3>
+                    <div class="price">₦207,000</div>
+                    <p class="price-note">Most popular</p>
+                    <ul class="pricing-features">
+                        <li>All 3 days of conference</li>
+                        <li>All keynotes & workshops</li>
+                        <li>Lunch & refreshments</li>
+                        <li>Conference materials</li>
+                        <li>Networking events</li>
+                        <li>Digital resource library</li>
+                        <li>30-day community access</li>
+                    </ul>
+                    <a href="#contact" class="cta-button">Register Now</a>
+                </div>
+
+                <div class="pricing-card">
+                    <h3>VIP</h3>
+                    <div class="price">₦414,000</div>
+                    <p class="price-note">Premium experience</p>
+                    <ul class="pricing-features">
+                        <li>All Standard features</li>
+                        <li>Front row seating</li>
+                        <li>VIP dinner with speakers</li>
+                        <li>1 private coaching session</li>
+                        <li>1-year community access</li>
+                        <li>Personal growth roadmap</li>
+                    </ul>
+                    <a href="#contact" class="cta-button">Register Now</a>
+                </div>
+            </div>
+
+            <div class="highlight" style="margin-top: 50px;">
+                Are you ready to experience growth… or just talk about it?
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" style="background: #f5f5f5;">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-container">
+                <div class="faq-item active">
+                    <div class="faq-question">
+                        <h4>Who is this conference for?</h4>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The Growth Experience is designed for professionals, entrepreneurs, and individuals at any career stage who are committed to meaningful personal and professional development. Whether you're just starting out or already leading, there's value for you.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Is this a virtual or in-person event?</h4>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The Growth Experience 2026 is an in-person event held at the Conference Center in Excellence City, June 15-17, 2026. The in-person format is intentional—the energy, networking, and connections are core to the experience.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Will recordings be available?</h4>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Selected keynotes and sessions will be recorded and made available to Standard and VIP ticket holders within 30 days of the conference. The full interactive experience, however, is designed for in-person attendance.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>What's the refund policy?</h4>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Full refunds are available up to 30 days before the event. From day 31 until day 1 of the conference, we offer exchange to a future event or 50% credit. No refunds are issued for no-shows. Contact us at info@tge26.com for any changes.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Can I upgrade my ticket after purchase?</h4>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! You can upgrade from Early Bird to Standard or VIP, or from Standard to VIP at any time. Simply email info@tge26.com with your upgrade request, and we'll adjust your ticket and send an invoice for the difference.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>What's included in the digital resource library?</h4>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Standard and VIP tickets include access to: session slides, speaker resources, action plan templates, worksheets, reading lists, tool recommendations, and exclusive guides created by our speakers for attendees.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Do you have group discounts?</h4>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! Groups of 5 or more receive 10% off. Contact our team at info@tge26.com with the names of your group members, and we'll set up your group registration.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>What about accessibility and accommodations?</h4>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We're committed to accessibility. The venue is wheelchair accessible, and we offer accommodations for various needs. Please reach out to info@tge26.com at least 2 weeks before the event to discuss your specific requirements.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Can I bring a guest or colleague?</h4>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! If you're interested in registering colleagues or friends, they can purchase their own ticket or you can contact us about group arrangements. The more people attending, the richer the experience.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 50px;">
+                <a href="#contact" class="cta-button">Still have questions? Contact us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Media/Gallery Section -->
+    <section style="padding: 60px 20px;">
+        <div class="container">
+            <h2>From Previous Events</h2>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">📸</div>
+                <div class="gallery-item">👥</div>
+                <div class="gallery-item">🎤</div>
+                <div class="gallery-item">💼</div>
+                <div class="gallery-item">🤝</div>
+                <div class="gallery-item">🌟</div>
+            </div>
+
+            <div class="content-box" style="margin-top: 50px; text-align: center;">
+                <h3 style="color: #1a1a1a; margin-bottom: 15px;">Get a Taste of What to Expect</h3>
+                <p class="intro-text" style="margin-bottom: 20px;">
+                    See highlights from our previous events. Attendees consistently report that the energy, insights, and connections exceed their expectations.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+
+            <div class="content-box" style="max-width: 600px; margin-left: auto; margin-right: auto;">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="ticket">Ticket Type</label>
+                        <select id="ticket" name="ticket" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; font-size: 1em;">
+                            <option>Select ticket type...</option>
+                            <option>Early Bird - $299</option>
+                            <option>Standard - $499</option>
+                            <option>VIP - $999</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Questions or Comments</label>
+                        <textarea id="message" name="message"></textarea>
+                    </div>
+
+                    <button type="submit" class="cta-button" style="width: 100%; cursor: pointer;">Submit</button>
+                </form>
+            </div>
+
+            <div class="content-box" style="margin-top: 50px;">
+                <h3 style="text-align: center; color: #1a1a1a; margin-bottom: 30px;">Contact Information</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; text-align: center;">
+                    <div>
+                        <h4 style="color: #ff6b35; margin-bottom: 10px;">Email</h4>
+                        <p><a href="mailto:info@tge26.com" style="color: #666; text-decoration: none;">info@tge26.com</a></p>
+                    </div>
+                    <div>
+                        <h4 style="color: #ff6b35; margin-bottom: 10px;">Phone</h4>
+                        <p><a href="tel:+1234567890" style="color: #666; text-decoration: none;">+1 (234) 567-8900</a></p>
+                    </div>
+                    <div>
+                        <h4 style="color: #ff6b35; margin-bottom: 10px;">Location</h4>
+                        <p>Conference Center<br>Excellence City</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 The Growth Experience. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#schedule">Schedule</a>
+                <a href="#speakers">Speakers</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact">Contact</a>
+                <a href="#" onclick="alert('Privacy Policy - Coming Soon')">Privacy Policy</a>
+                <a href="#" onclick="alert('Terms of Use - Coming Soon')">Terms of Use</a>
+            </div>
+            <p style="margin-top: 20px; color: #666;">Follow us on social media @TGE26</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && !href.includes('onclick')) {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                }
+            });
+        });
+
+        // FAQ Toggle Functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', function() {
+                const faqItem = this.closest('.faq-item');
+                
+                // Close all other items
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    if (item !== faqItem) {
+                        item.classList.remove('active');
+                    }
+                });
+                
+                // Toggle current item
+                faqItem.classList.toggle('active');
+            });
+        });
+
+        // Form submission handler
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = document.getElementById('email').value;
+            const name = document.getElementById('name').value;
+            alert('Thank you for your interest, ' + name + '! We will contact you soon at ' + email);
+            this.reset();
+        });
+    </script>
+</body>
+</html>
