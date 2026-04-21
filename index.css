@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Sora:wght@700;800&display=swap');
+
+:root {
+    --primary: #ff6b35;
+    --primary-glow: rgba(255, 107, 53, 0.3);
+    --bg-dark: #0a0a0a;
+    --card-bg: #161616;
+    --text-main: #ffffff;
+    --text-dim: #a0a0a0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Typography Upgrades */
+h1, h2, h3, .nav-brand {
+    font-family: 'Sora', sans-serif;
+    letter-spacing: -0.02em;
+}
+
+.gradient-text {
+    background: linear-gradient(135deg, #fff 0%, #ff6b35 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Glassmorphism Nav */
+nav {
+    background: rgba(10, 10, 10, 0.8);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+/* Hero Section Enhancement */
+.hero {
+    padding: 140px 20px;
+    background: radial-gradient(circle at top right, rgba(255, 107, 53, 0.15), transparent),
+                radial-gradient(circle at bottom left, rgba(255, 107, 53, 0.05), transparent);
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: clamp(2.5rem, 8vw, 5rem);
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero-highlights div {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 16px;
+    transition: transform 0.3s ease;
+}
+
+.hero-highlights div:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary);
+}
+
+/* Bento Style Cards */
+.feature-card, .speaker-card, .session-card, .pricing-card {
+    background: var(--card-bg);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 24px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.feature-card:hover, .speaker-card:hover {
+    border-color: var(--primary);
+    box-shadow: 0 0 30px var(--primary-glow);
+}
+
+/* Premium Buttons */
+.cta-button {
+    background: var(--primary);
+    color: white;
+    padding: 18px 45px;
+    border-radius: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    box-shadow: 0 10px 20px rgba(255, 107, 53, 0.2);
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    transform: scale(1.05);
+    background: #ff8c42;
+}
+
+.cta-button.secondary {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.2);
+    box-shadow: none;
+}
+
+/* Modern Pricing */
+.pricing-card.featured {
+    background: linear-gradient(180deg, #1f1f1f 0%, #161616 100%);
+    border: 2px solid var(--primary);
+    position: relative;
+    overflow: hidden;
+}
+
+.pricing-card.featured::before {
+    content: 'BEST VALUE';
+    position: absolute;
+    top: 20px;
+    right: -30px;
+    background: var(--primary);
+    transform: rotate(45deg);
+    padding: 5px 40px;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+/* FAQ Accordion */
+.faq-question {
+    background: rgba(255,255,255,0.02);
+    border-radius: 12px;
+}
+
+/* Form Styling */
+input, textarea, select {
+    background: #1f1f1f;
+    border: 1px solid rgba(255,255,255,0.1);
+    color: white;
+}
