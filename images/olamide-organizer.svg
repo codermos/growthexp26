@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 960" role="img" aria-labelledby="title desc">
+  <title id="title">Olamide Moses Owosanni portrait placeholder</title>
+  <desc id="desc">A lightweight branded illustration placeholder for the conference organizer.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#10203b"/>
+      <stop offset="100%" stop-color="#d97a34"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.08"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="960" fill="url(#bg)"/>
+  <circle cx="610" cy="170" r="120" fill="#ffffff" fill-opacity="0.08"/>
+  <circle cx="130" cy="820" r="170" fill="#ffffff" fill-opacity="0.08"/>
+  <rect x="72" y="72" width="656" height="816" rx="40" fill="url(#accent)" stroke="#ffffff" stroke-opacity="0.22"/>
+  <circle cx="400" cy="330" r="140" fill="#f5d1b0"/>
+  <path d="M270 580c46-54 113-86 190-86 77 0 144 32 190 86v176H270V580z" fill="#f7efe4"/>
+  <path d="M285 327c4-92 57-154 115-154 52 0 106 34 132 106-18 6-43 3-70-9-36-15-74-8-115 57-24 0-45 0-62 0z" fill="#111d36"/>
+  <rect x="112" y="112" width="132" height="34" rx="17" fill="#ffffff" fill-opacity="0.18"/>
+  <text x="132" y="135" fill="#ffffff" font-family="Arial, sans-serif" font-size="18" font-weight="700">ORGANIZER</text>
+  <text x="118" y="830" fill="#ffffff" font-family="Georgia, serif" font-size="52" font-weight="700">Olamide Moses</text>
+  <text x="118" y="872" fill="#fbe6d5" font-family="Arial, sans-serif" font-size="24">Host of The Growth Experience 2026</text>
+</svg>

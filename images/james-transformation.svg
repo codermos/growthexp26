@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 960" role="img" aria-labelledby="title desc">
+  <title id="title">James Transformation portrait placeholder</title>
+  <desc id="desc">A lightweight branded speaker illustration placeholder.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#17223a"/>
+      <stop offset="100%" stop-color="#3d6b61"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="960" fill="url(#bg)"/>
+  <circle cx="180" cy="160" r="112" fill="#ffffff" fill-opacity="0.08"/>
+  <rect x="72" y="72" width="656" height="816" rx="40" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.2"/>
+  <circle cx="400" cy="332" r="136" fill="#dfb48f"/>
+  <path d="M240 760c22-148 95-244 160-244s138 96 160 244H240z" fill="#eef3ef"/>
+  <path d="M258 304c27-87 86-139 159-139 58 0 100 27 126 99-56 18-108 25-155 20-53-6-91 0-130 20z" fill="#11182b"/>
+  <rect x="112" y="112" width="152" height="34" rx="17" fill="#ffffff" fill-opacity="0.18"/>
+  <text x="130" y="135" fill="#ffffff" font-family="Arial, sans-serif" font-size="18" font-weight="700">TRANSFORMATION</text>
+  <text x="118" y="828" fill="#ffffff" font-family="Georgia, serif" font-size="46" font-weight="700">James Transformation</text>
+  <text x="118" y="870" fill="#d8ece4" font-family="Arial, sans-serif" font-size="24">Purpose, habits, and personal growth</text>
+</svg>

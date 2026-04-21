@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 960" role="img" aria-labelledby="title desc">
+  <title id="title">Sarah Leadership portrait placeholder</title>
+  <desc id="desc">A lightweight branded speaker illustration placeholder.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a2741"/>
+      <stop offset="100%" stop-color="#2c8a84"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="960" fill="url(#bg)"/>
+  <circle cx="615" cy="145" r="120" fill="#ffffff" fill-opacity="0.08"/>
+  <rect x="72" y="72" width="656" height="816" rx="40" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.2"/>
+  <circle cx="400" cy="332" r="138" fill="#f2ccb1"/>
+  <path d="M255 760c20-147 107-244 145-244s125 97 145 244H255z" fill="#f8f2eb"/>
+  <path d="M279 303c10-88 66-151 145-151 62 0 108 38 126 104-80 32-122 9-184-6-30-7-58 4-87 53z" fill="#101b31"/>
+  <rect x="112" y="112" width="116" height="34" rx="17" fill="#ffffff" fill-opacity="0.18"/>
+  <text x="130" y="135" fill="#ffffff" font-family="Arial, sans-serif" font-size="18" font-weight="700">KEYNOTE</text>
+  <text x="118" y="828" fill="#ffffff" font-family="Georgia, serif" font-size="50" font-weight="700">Sarah Leadership</text>
+  <text x="118" y="870" fill="#dcefeb" font-family="Arial, sans-serif" font-size="24">Leadership and resilient growth</text>
+</svg>

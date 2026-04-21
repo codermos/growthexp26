@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 960" role="img" aria-labelledby="title desc">
+  <title id="title">Michael Strategy portrait placeholder</title>
+  <desc id="desc">A lightweight branded speaker illustration placeholder.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#182036"/>
+      <stop offset="100%" stop-color="#b56022"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="960" fill="url(#bg)"/>
+  <circle cx="150" cy="170" r="112" fill="#ffffff" fill-opacity="0.07"/>
+  <rect x="72" y="72" width="656" height="816" rx="40" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.2"/>
+  <circle cx="400" cy="332" r="136" fill="#e7bb95"/>
+  <path d="M245 760c18-153 99-244 155-244 56 0 137 91 155 244H245z" fill="#f5f1ea"/>
+  <path d="M268 295c28-90 86-130 154-130 59 0 114 38 128 111-82-15-132-13-190-2-32 7-59 16-92 21z" fill="#101929"/>
+  <rect x="112" y="112" width="116" height="34" rx="17" fill="#ffffff" fill-opacity="0.18"/>
+  <text x="130" y="135" fill="#ffffff" font-family="Arial, sans-serif" font-size="18" font-weight="700">SYSTEMS</text>
+  <text x="118" y="828" fill="#ffffff" font-family="Georgia, serif" font-size="50" font-weight="700">Michael Strategy</text>
+  <text x="118" y="870" fill="#f5decb" font-family="Arial, sans-serif" font-size="24">Execution and strategic focus</text>
+</svg>

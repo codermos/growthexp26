@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 960" role="img" aria-labelledby="title desc">
+  <title id="title">Amanda Success portrait placeholder</title>
+  <desc id="desc">A lightweight branded speaker illustration placeholder.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#1c2238"/>
+      <stop offset="100%" stop-color="#91563d"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="960" fill="url(#bg)"/>
+  <circle cx="620" cy="170" r="118" fill="#ffffff" fill-opacity="0.08"/>
+  <rect x="72" y="72" width="656" height="816" rx="40" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.2"/>
+  <circle cx="400" cy="332" r="138" fill="#f0c8af"/>
+  <path d="M250 760c28-143 96-244 150-244 54 0 122 101 150 244H250z" fill="#f7f1ea"/>
+  <path d="M262 322c15-95 77-158 153-158 57 0 98 32 120 96-65 34-116 43-166 35-52-8-77-1-107 27z" fill="#191e31"/>
+  <rect x="112" y="112" width="126" height="34" rx="17" fill="#ffffff" fill-opacity="0.18"/>
+  <text x="130" y="135" fill="#ffffff" font-family="Arial, sans-serif" font-size="18" font-weight="700">GROWTH</text>
+  <text x="118" y="828" fill="#ffffff" font-family="Georgia, serif" font-size="49" font-weight="700">Amanda Success</text>
+  <text x="118" y="870" fill="#efe2d8" font-family="Arial, sans-serif" font-size="24">Performance strategy and positioning</text>
+</svg>

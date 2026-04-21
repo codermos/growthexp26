@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 160" role="img" aria-labelledby="title desc">
+  <title id="title">Moplus Media logo placeholder</title>
+  <desc id="desc">A clean placeholder sponsor logo for Moplus Media.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#152039"/>
+      <stop offset="100%" stop-color="#2c8a84"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="160" rx="28" fill="url(#bg)"/>
+  <rect x="28" y="28" width="104" height="104" rx="28" fill="#ffffff" fill-opacity="0.12"/>
+  <path d="M58 106V54h17l16 27 16-27h17v52h-15V77l-13 22H97L84 77v29H58z" fill="#ffffff"/>
+  <text x="156" y="79" fill="#ffffff" font-family="Arial, sans-serif" font-size="34" font-weight="700">Moplus Media</text>
+  <text x="156" y="109" fill="#d8f1ef" font-family="Arial, sans-serif" font-size="16">Creative partner and media sponsor</text>
+</svg>

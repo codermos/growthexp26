@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 960" role="img" aria-labelledby="title desc">
+  <title id="title">Elena Innovation portrait placeholder</title>
+  <desc id="desc">A lightweight branded speaker illustration placeholder.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a2138"/>
+      <stop offset="100%" stop-color="#5d728f"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="960" fill="url(#bg)"/>
+  <circle cx="632" cy="168" r="116" fill="#ffffff" fill-opacity="0.08"/>
+  <rect x="72" y="72" width="656" height="816" rx="40" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.2"/>
+  <circle cx="400" cy="332" r="138" fill="#f1cfbd"/>
+  <path d="M252 760c30-140 100-244 148-244 48 0 118 104 148 244H252z" fill="#f7f2ec"/>
+  <path d="M267 319c16-92 77-153 151-153 59 0 102 32 128 100-52 31-89 34-133 28-66-9-104 3-146 25z" fill="#161b2f"/>
+  <rect x="112" y="112" width="138" height="34" rx="17" fill="#ffffff" fill-opacity="0.18"/>
+  <text x="130" y="135" fill="#ffffff" font-family="Arial, sans-serif" font-size="18" font-weight="700">INNOVATION</text>
+  <text x="118" y="828" fill="#ffffff" font-family="Georgia, serif" font-size="48" font-weight="700">Elena Innovation</text>
+  <text x="118" y="870" fill="#dfe5ef" font-family="Arial, sans-serif" font-size="24">Modern teams and change leadership</text>
+</svg>

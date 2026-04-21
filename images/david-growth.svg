@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 960" role="img" aria-labelledby="title desc">
+  <title id="title">David Growth portrait placeholder</title>
+  <desc id="desc">A lightweight branded speaker illustration placeholder.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#17223c"/>
+      <stop offset="100%" stop-color="#2f6a8c"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="960" fill="url(#bg)"/>
+  <circle cx="180" cy="182" r="120" fill="#ffffff" fill-opacity="0.08"/>
+  <rect x="72" y="72" width="656" height="816" rx="40" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.2"/>
+  <circle cx="400" cy="332" r="136" fill="#e5be98"/>
+  <path d="M240 760c28-142 91-244 160-244 69 0 132 102 160 244H240z" fill="#eef1f5"/>
+  <path d="M257 305c16-92 79-146 156-146 55 0 105 34 130 105-87 12-154 1-191-3-34-3-62 7-95 44z" fill="#11192d"/>
+  <rect x="112" y="112" width="118" height="34" rx="17" fill="#ffffff" fill-opacity="0.18"/>
+  <text x="130" y="135" fill="#ffffff" font-family="Arial, sans-serif" font-size="18" font-weight="700">TEAMS</text>
+  <text x="118" y="828" fill="#ffffff" font-family="Georgia, serif" font-size="50" font-weight="700">David Growth</text>
+  <text x="118" y="870" fill="#dde8f1" font-family="Arial, sans-serif" font-size="24">Team performance and accountability</text>
+</svg>
