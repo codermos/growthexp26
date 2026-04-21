@@ -12,18 +12,18 @@
     <title>The Growth Experience 2026</title>
     <style>
         :root {
-            --bg: #edf3fb;
+            --bg: #0a1628;
             --surface: rgba(255, 255, 255, 0.88);
             --surface-strong: #ffffff;
             --surface-dark: #07182f;
             --surface-deep: #10356d;
             --text: #10213b;
-            --muted: #5b6b80;
+            --muted: #ffc107;
             --line: rgba(16, 33, 59, 0.12);
-            --brand: #165db7;
-            --brand-deep: #0f4e98;
-            --accent: #111111;
-            --accent-soft: rgba(22, 93, 183, 0.14);
+            --brand: #ffc107;
+            --brand-deep: #ffb300;
+            --accent: #ffc107;
+            --accent-soft: rgba(255, 193, 7, 0.14);
             --shadow: 0 24px 70px rgba(7, 24, 47, 0.12);
             --radius-xl: 32px;
             --radius-lg: 24px;
@@ -48,9 +48,9 @@
         body {
             font-family: "Aptos", "Trebuchet MS", "Segoe UI", sans-serif;
             background:
-                radial-gradient(circle at top left, rgba(22, 93, 183, 0.18), transparent 30%),
-                radial-gradient(circle at 85% 18%, rgba(7, 24, 47, 0.12), transparent 26%),
-                linear-gradient(180deg, #f7fbff 0%, #edf3fb 48%, #e7edf7 100%);
+                radial-gradient(circle at top left, rgba(255, 193, 7, 0.08), transparent 30%),
+                radial-gradient(circle at 85% 18%, rgba(10, 22, 40, 0.8), transparent 26%),
+                linear-gradient(180deg, #0a1628 0%, #051220 48%, #020a14 100%);
             color: var(--text);
             line-height: 1.6;
             position: relative;
@@ -308,9 +308,10 @@
         }
 
         .button {
-            background: linear-gradient(135deg, var(--brand), var(--brand-deep));
-            color: #fff;
-            box-shadow: 0 18px 40px rgba(22, 93, 183, 0.28);
+            background: linear-gradient(135deg, #ffc107, #ffb300);
+            color: #000000;
+            box-shadow: 0 18px 40px rgba(255, 193, 7, 0.28);
+            font-weight: 700;
         }
 
         .button-secondary {
@@ -343,8 +344,8 @@
             position: relative;
             overflow: hidden;
             isolation: isolate;
-            background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(232, 241, 252, 0.88));
-            border: 1px solid rgba(22, 93, 183, 0.12);
+            background: transparent;
+            border: none;
         }
 
         .hero-copy::after {
@@ -375,10 +376,11 @@
             line-height: 0.96;
             letter-spacing: -0.05em;
             max-width: 12ch;
+            color: #ffffff;
         }
 
         .hero-copy p {
-            color: var(--muted);
+            color: #ffc107;
             font-size: 1.08rem;
             max-width: 60ch;
         }
@@ -1531,7 +1533,7 @@
                         <p>The Growth Experience 2026 is a three-day conference for founders, operators, and ambitious professionals who want sharper systems, stronger leadership, and measurable momentum.</p>
 
                         <div class="event-strip" aria-label="Event details">
-                            <span>Monday to Wednesday</span>
+                            <span>Sunday to Tuesday</span>
                             <span>Conference Center, Excellence City</span>
                             <span>In person only</span>
                         </div>
@@ -1560,7 +1562,7 @@
                     <div class="hero-aside">
                         <article class="hero-card glass-card hero-portrait">
                             <div class="portrait-media">
-                                <img class="host-photo" src="images/Olamide Moses the host.jpg" alt="Portrait of Olamide Moses Owosanni" width="4000" height="6000" loading="eager" fetchpriority="high" decoding="async">
+                                <img class="host-photo" src="images/olamide-organizer.jpg" alt="Portrait of Olamide Moses Owosanni" width="4000" height="6000" loading="eager" fetchpriority="high" decoding="async">
                             </div>
 
                             <div class="portrait-copy">
@@ -1691,7 +1693,7 @@
                 <div class="container organizer-grid">
                     <article class="organizer-card glass-card">
                         <div class="organizer-media">
-                            <img class="host-photo" src="images/Olamide Moses the host.jpg" alt="Portrait of organizer Olamide Moses Owosanni" width="4000" height="6000" loading="lazy" decoding="async">
+                            <img class="host-photo" src="images/olamide-organizer.jpg" alt="Portrait of organizer Olamide Moses Owosanni" width="4000" height="6000" loading="lazy" decoding="async">
                         </div>
                     </article>
 
@@ -1846,7 +1848,7 @@
                     <div class="section-heading">
                         <span class="eyebrow">Agenda overview</span>
                         <h2>A clear three-day flow with corrected event dates and stronger structure.</h2>
-                        <p>The schedule uses the actual 2026 calendar: Monday, June 15 through Wednesday, June 17. Each day has a distinct purpose so the experience feels progressive rather than repetitive.</p>
+                        <p>The schedule uses the actual 2026 calendar: Sunday, June 15 through Tuesday, June 17. Each day has a distinct purpose so the experience feels progressive rather than repetitive.</p>
                     </div>
 
                     <div class="agenda-shell">
@@ -1860,15 +1862,15 @@
                             <div class="agenda-tabs" role="tablist" aria-label="Conference days">
                                 <button class="agenda-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="agenda-day-1" id="agenda-tab-1" data-agenda-tab="agenda-day-1">
                                     <strong>Day 1: Foundation</strong>
-                                    <span>Monday, June 15, 2026</span>
+                                    <span>Sunday, June 15, 2026</span>
                                 </button>
                                 <button class="agenda-tab" type="button" role="tab" aria-selected="false" aria-controls="agenda-day-2" id="agenda-tab-2" data-agenda-tab="agenda-day-2">
                                     <strong>Day 2: Application</strong>
-                                    <span>Tuesday, June 16, 2026</span>
+                                    <span>Monday, June 16, 2026</span>
                                 </button>
                                 <button class="agenda-tab" type="button" role="tab" aria-selected="false" aria-controls="agenda-day-3" id="agenda-tab-3" data-agenda-tab="agenda-day-3">
                                     <strong>Day 3: Momentum</strong>
-                                    <span>Wednesday, June 17, 2026</span>
+                                    <span>Tuesday, June 17, 2026</span>
                                 </button>
                             </div>
 
@@ -2189,7 +2191,7 @@
                                 <span>+</span>
                             </summary>
                             <div class="faq-content">
-                                The event is fully in person at the Conference Center in Excellence City from Monday, June 15, 2026 to Wednesday, June 17, 2026.
+                                The event is fully in person at the Conference Center in Excellence City from Sunday, June 15, 2026 to Tuesday, June 17, 2026.
                             </div>
                         </details>
 
